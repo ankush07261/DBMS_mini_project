@@ -1,0 +1,14 @@
+<%- include("partials/header.ejs") -%>
+<div class="homebg page"></div>
+<h1>Manage your college clubs here.</h1>
+
+<div class="manage-container">
+  <form action="/home" method="POST">
+    <label for="query">Enter SQL Query:</label><br>
+    <textarea name="query" id="query" rows="5" cols="50" required></textarea><br>
+    <button type="submit">Execute</button>
+  </form>
+</div>
+
+
+<%- include("partials/footer.ejs") -%>
