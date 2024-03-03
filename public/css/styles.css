@@ -156,3 +156,10 @@ td {
 th {
   background-color: #f2f2f2;
 }
+.error p{
+  text-align: center;
+  padding-top: 2rem;
+}
+.result p{
+  text-align: center;
+}
