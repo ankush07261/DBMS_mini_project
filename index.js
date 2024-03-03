@@ -66,7 +66,7 @@ app.post("/home", (req, res) => {
   connection.query(query, (err, result) => {
     if (err) {
       res.render("error", {
-        message: "An error occurred while executing the query.",
+        message: "An error occurred while executing the query.\n Kindly check for the correctness of your query",
       });
     } else {
       res.render("query-result", { result });
