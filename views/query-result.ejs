@@ -1,6 +1,7 @@
 <%- include("partials/header.ejs") %>
 <h1>Here's what you are looking for:</h1>
 <div class="result">
+  <% if (result && result.length > 0) { %>
   <table>
     <thead>
       <tr>
@@ -19,6 +20,11 @@
       <% }); %>
     </tbody>
   </table>
+  <% } if(!result){ %>
+  <p>kindly check your sql query syntax</p>
+  <% } else { %>
+  <p>Executed successfully.</p>
+  <% } %>
 </div>
 
 <%- include("partials/footer.ejs") %>
